@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Data", "SolarCoffee.Data\SolarCoffee.Data.csproj", "{2BF6D0DE-DCE1-41D2-8DD3-8187C6900264}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Data", "SolarCoffee.Data\SolarCoffee.Data.csproj", "{2BF6D0DE-DCE1-41D2-8DD3-8187C6900264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Services", "SolarCoffee.Services\SolarCoffee.Services.csproj", "{18144470-377A-4469-A31C-73C66E54B231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Services", "SolarCoffee.Services\SolarCoffee.Services.csproj", "{18144470-377A-4469-A31C-73C66E54B231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SollarCoffee.Test", "SollarCoffee.Test\SollarCoffee.Test.csproj", "{BE435638-7BBC-41E1-B26A-19D06BD78D21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SollarCoffee.Test", "SollarCoffee.Test\SollarCoffee.Test.csproj", "{BE435638-7BBC-41E1-B26A-19D06BD78D21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCoffee.Web", "SolarCoffee.Web\SolarCoffee.Web.csproj", "{C8742BDF-F16E-4BCD-A87F-A1F4EA524341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCoffee.Web", "SolarCoffee.Web\SolarCoffee.Web.csproj", "{C8742BDF-F16E-4BCD-A87F-A1F4EA524341}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BF6D0DE-DCE1-41D2-8DD3-8187C6900264} = {2BF6D0DE-DCE1-41D2-8DD3-8187C6900264}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2BF6D0DE-DCE1-41D2-8DD3-8187C6900264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +72,11 @@ Global
 		{C8742BDF-F16E-4BCD-A87F-A1F4EA524341}.Release|x64.Build.0 = Release|Any CPU
 		{C8742BDF-F16E-4BCD-A87F-A1F4EA524341}.Release|x86.ActiveCfg = Release|Any CPU
 		{C8742BDF-F16E-4BCD-A87F-A1F4EA524341}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1A70EED-D157-4CA1-AC1C-9B5E501EB1C7}
 	EndGlobalSection
 EndGlobal
